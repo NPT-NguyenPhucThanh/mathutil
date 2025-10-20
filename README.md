@@ -1,3 +1,5 @@
+[![Math Utility Project (CI included) | © 2025 by phuc.thanh](https://github.com/NPT-NguyenPhucThanh/mathutil/actions/workflows/ci-scipt.yml/badge.svg)](https://github.com/NPT-NguyenPhucThanh/mathutil/actions/workflows/ci-scipt.yml)
+
 # Welcome to Math Utility Project
 
 ### You will find this repo the following stuff:
