@@ -12,16 +12,30 @@ public class MathUtility {
     //0...20 -> valid boundary validated boundary - vùng giá trị hợp lệ
     //0,20 -> boundary - biên giới của tập giá trị
     // ngoài vùng này gọi là invalid boundary!!!
+//    public static long getFactorial(int n) {
+//        if(n<0 || n>20){
+//            //ném ngoại lệ , kèm câu chửi, và dừng hàm ngay, ko có value nào đc trả về
+//            throw new IllegalArgumentException("n must be between 0 and 20");
+//        }
+//        // biến trung gian để tính phép nhân
+//        long result =1;
+//        for(int i = 1; i <=n; i++){
+//            result *= i;
+//        }
+//        return result;
+//    }
+
+// viết hàm theo phong cách đệ quy
     public static long getFactorial(int n) {
         if(n<0 || n>20){
             //ném ngoại lệ , kèm câu chửi, và dừng hàm ngay, ko có value nào đc trả về
             throw new IllegalArgumentException("n must be between 0 and 20");
         }
         // biến trung gian để tính phép nhân
-        long result =1;
-        for(int i = 1; i <=n; i++){
-            result *= i;
+        if(n==1 || n==0){
+            return 1;
         }
-        return result;
+        return n*getFactorial(n-1);
     }
+    //KIỂM THỬ LẠI CODE ĐÃ TỐI ƯU dgl REGRESSION TESTING, TEST LẠI THỨ ĐÃ TỪNG TEST
 }
